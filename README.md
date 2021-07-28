@@ -86,3 +86,18 @@ Please refer to the development section in the [docs/development](https://github
 
 ## INAV Releases
 https://github.com/iNavFlight/inav/releases
+   
+    
+## Open MSP_DISPLAYPORT
+
+1. Refer to ````docs/development````, build the hex file for your target, program to FC.
+2. Set MSP_DISPLAYPORT:    
+    I use the serial port 4, Open INAV Configurator, enter the CLI interface to configure MSP_DISPLAYPORT as follows(````33554432```` means ````FUNCTION_MSP_DISPLAYPORT````, you can refer to the source code for details if you like):    
+        ````serial 3 33554432 115200 115200 0 115200````    
+        ````save````    
+
+## Known issue
+If you open too many osd items, it will get stuck.
+
+    
+    
